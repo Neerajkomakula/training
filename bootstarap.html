@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    
+  </head>
+  <body>
+    <div
+      class="container-fluid border border-dark"
+      style="height: 100vh; justify-content: center; align-items: center"
+    >
+      <div class="container w-25 p-5">
+        <div><h1 class="text-center">Welcome User!</h1></div>
+        <form class="p-4 border border-dark">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Username/Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+            <div id="passwordHelpBlock" class="form-text text-end">
+              Forgot Password?
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" onclick=myfun()>
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myfun() {
+        
+        var email = document.getElementById("exampleInputEmail1").value;
+        email = String(email);
+        var start = email.indexOf('@');
+       
+        var substr = email.substring(start + 1, email.length);
+        var string1 = "darwinbox.in";
+        const result = substr.toUpperCase() === string1.toUpperCase();
+        console.log(substr);
+        if (result) {
+          console.log("correct");
+        } else {
+          console.log("INcorrect");
+        }
+      }
+    </script>
+    <script src="/home/neeraj.k/Desktop/training1/bootstrapjs.js"></script>
+  </body>
+</html>
