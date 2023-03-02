@@ -1,13 +1,4 @@
-// const myobj = {
-//     id : 100,
-//     name : "neraj",
-//     profession : "student",
-//     work : function(){
-//         console.log('studiesss')
-//     }
-// }
 
-// myobj.work();
 
 
 const employee = [
