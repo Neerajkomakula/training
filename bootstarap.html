@@ -11,16 +11,21 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <style>
+      h1{
+        color: rgb(5, 5, 5);
+      }
+    </style>
     
   </head>
   <body>
     <div
       class="container-fluid border border-dark"
-      style="height: 100vh; justify-content: center; align-items: center"
+      style=" height: 100vh; display:flex; justify-content: center; align-items: center"
     >
-      <div class="container w-25 p-5">
+      <div class="container d-flex-column  justify-content-center">
         <div><h1 class="text-center">Welcome User!</h1></div>
-        <form class="p-4 border border-dark">
+        <form class="p-4 border border-dark w-50" id="my_form">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"
               >Username/Email</label
@@ -51,8 +56,13 @@
             Submit
           </button>
         </form>
+        <div class="row">
+          <div class="btn btn-primary">clicke-me</div>
+        </div>
       </div>
+      
     </div>
+    
 
     
 
@@ -62,6 +72,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
+     
       function myfun() {
         
         var email = document.getElementById("exampleInputEmail1").value;
